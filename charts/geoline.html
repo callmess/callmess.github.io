@@ -11,12 +11,13 @@
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
        <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
-  
+
 <script type="text/javascript">
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom);
     var app = {};
     option = null;
+
     var geoCoordMap = {
         '上海': [121.4648,31.2891],
         '东莞': [113.8953,22.901],
@@ -137,32 +138,33 @@
 
 
     var GZData = [
-        [{name:'广州'},{name:'广州',value:188}],
-        [{name:'广州'},{name:'杭州',value:88}],
-        [{name:'广州'},{name:'福州',value:95}],
-        [{name:'广州'},{name:'太原',value:90}],
-        [{name:'广州'},{name:'长春',value:80}],
-        [{name:'广州'},{name:'重庆',value:70}],
-        [{name:'广州'},{name:'西安',value:60}],
-        [{name:'广州'},{name:'成都',value:50}],
-        [{name:'广州'},{name:'常州',value:40}],
-        [{name:'广州'},{name:'北京',value:30}],
-        [{name:'广州'},{name:'北海',value:20}],
-        [{name:'广州'},{name:'海口',value:10}],
-        [{name:'广州'},{name:'昆明',value:80}],
-        [{name:'广州'},{name:'南宁',value:90}],
-        [{name:'广州'},{name:'南昌',value:100}],
-        [{name:'广州'},{name:'拉萨',value:10}],
-        [{name:'广州'},{name:'西宁',value:10}],
-        [{name:'广州'},{name:'乌鲁木齐',value:10}],
-        [{name:'广州'},{name:'呼和浩特',value:10}],
-        [{name:'广州'},{name:'长春',value:10}],
-        [{name:'广州'},{name:'哈尔滨',value:10}],
-        [{name:'广州'},{name:'重庆',value:100}]
+       
+       	[{name:'杭州'},{name:'杭州'}],
+        [{name:'杭州'},{name:'广州'}],
+        [{name:'福州'},{name:'广州'}],
+        [{name:'太原'},{name:'广州'}],
+        [{name:'长春'},{name:'广州'}],
+        [{name:'重庆'},{name:'广州'}],
+        [{name:'西安'},{name:'广州'}],
+        [{name:'成都'},{name:'广州'}],
+        [{name:'常州'},{name:'广州'}],
+        [{name:'北京'},{name:'广州'}],
+        [{name:'北海'},{name:'广州'}],
+        [{name:'海口'},{name:'广州'}],
+        [{name:'昆明'},{name:'广州'}],
+        [{name:'南宁'},{name:'广州'}],
+        [{name:'南昌'},{name:'广州'}],
+        [{name:'拉萨'},{name:'广州'}],
+        [{name:'西宁'},{name:'广州'}],
+        [{name:'乌鲁木齐'},{name:'广州'}],
+        [{name:'呼和浩特'},{name:'广州'}],
+        [{name:'长春'},{name:'广州'}],
+        [{name:'哈尔滨'},{name:'广州'}],
+        [{name:'重庆'},{name:'广州'}]
     ];
 
-    var planePath = 'path://M1705.06';
-
+  var planePath = 'path://M1705.06';
+    
     var convertData = function (data) {
         var res = [];
         for (var i = 0; i < data.length; i++) {
@@ -182,9 +184,11 @@
 
     var color = ['#a6c84c', '#ffa022', '#46bee9'];
     var series = [];
+    
     [ ['广州', GZData]].forEach(function (item, i) {
+    	
         series.push({
-                    name: item[0] + ' Top10',
+                    name: item[0],
                     type: 'lines',
                     zlevel: 1,
                     effect: {
@@ -194,6 +198,7 @@
                         color: '#fff',
                         symbolSize: 3
                     },
+              
                     lineStyle: {
                         normal: {
                             color: color[i],
@@ -204,7 +209,7 @@
                     data: convertData(item[1])
                 },
                 {
-                    name: item[0] + ' Top10',
+                    name: item[0] ,
                     type: 'lines',
                     zlevel: 2,
                     effect: {
@@ -225,7 +230,7 @@
                     data: convertData(item[1])
                 },
                 {
-                    name: item[0] + ' Top10',
+                    name: item[0],
                     type: 'effectScatter',
                     coordinateSystem: 'geo',
                     zlevel: 2,
@@ -259,7 +264,7 @@
     option = {
         backgroundColor: '#404a59',
         title : {
-            text: '航班线路模拟图',
+            text: '模拟迁徙图',
 
             left: 'center',
             textStyle : {
@@ -283,7 +288,8 @@
             map: 'china',
             label: {
                 emphasis: {
-                    show: false
+                    show: true
+                    
                 }
             },
             roam: true,
@@ -298,6 +304,7 @@
             }
         },
         series: series
+       
     };;
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
