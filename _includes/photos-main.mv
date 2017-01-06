@@ -7,13 +7,13 @@ showIncompatibleMessage = ^(message) {
 
 if (typeof XMLHttpRequest == 'undefined' || !document.querySelector) {
   showIncompatibleMessage 'Unsupported browser. Redirecting...'
-  document.location.href = 'http://www.flickr.com/photos/rsms/'
+  document.location.href = 'http://lovexiaojun.lofter.com/'
   return
 }
 
 if (window.rsmsHostIsIOS) {
   showIncompatibleMessage 'Touch screens are not yet supported. Redirecting...'
-  document.location.href = 'http://www.flickr.com/photos/rsms/'
+  document.location.href = 'http://lovexiaojun.lofter.com/'
   return
 }
 
@@ -203,7 +203,7 @@ createPhotoView = ^(photo) {
   #view.title = 'Has '+photo.views+' views on Flickr and was taken '+photo.datetaken+' UTC'
   
   a = view.querySelector 'a'
-  a.href = 'http://www.flickr.com/photos/rsms/'+photo.id+'/'
+  a.href = 'http://lovexiaojun.lofter.com/'+photo.id+'/'
   
   img = view.querySelector 'img'
   img.onload = ^{
