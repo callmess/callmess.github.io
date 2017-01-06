@@ -1,2 +1,1 @@
-# this is a githubpages 
-# url:juneday.cc
+you can get the resoure : git clone git@github.com:rsms/rsms.github.com.git
