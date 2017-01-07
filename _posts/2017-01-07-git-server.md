@@ -9,10 +9,10 @@ redirect_from: ["/2017/01/07/gitserver.html"]
 
 ![copssh](/res/0107/copssh.png)
 
- *
+ * 添加用于登录的用户,password authenticaction不要勾,因为我们是选择使用公钥来登录
 ![](/res/0107/copssh1.png)
 
- *
+ * 导入公钥: 将客户端生成的公钥导粘贴到下图这里
 ![](/res/0107/copssh.png)
 
  * 到了这一步,是可以用ssh命令登录Windows了, 但是登录后的的shell是找不到git的相关命令的
@@ -44,6 +44,5 @@ redirect_from: ["/2017/01/07/gitserver.html"]
 
 
 ![](/res/jun/17010502.jpg)
-
 ### 联系我
  * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=send to Moss&body=邮件内容)
