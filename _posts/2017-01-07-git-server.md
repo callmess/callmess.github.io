@@ -15,19 +15,28 @@ redirect_from: ["/2017/01/07/gitserver.html"]
  *
 ![](/res/0107/copssh.png)
 
- *
+ * 到了这一步,是可以用ssh命令登录Windows了, 但是登录后的的shell是找不到git的相关命令的
+所以还要配置git的path
 
     D:\Git\cmd
 
     D:\Git\mingw64\bin
 
-
+    到这一步成功了! 可以创建仓库测试了
 
     git init newrepo.git --bare
 
+* 可能出现的问题
 
+  * ssh能正常访问, git命令也能用.但是在git clone总是提示,仓库不存在(实际是存在的),
 
+    ``解决:重启客户端电脑后再次操作就可以了``
 
+  * 貌似git仓库所在的目录必须是在ssh的home目录才行, 试了在不同的盘符没有成功过,
+
+    `解决:根据网上有说是只有相对路径才可以!!!!`
+
+* 好了,可以洗洗睡了, 献上两张风景美图!!
 
 
 
@@ -36,5 +45,5 @@ redirect_from: ["/2017/01/07/gitserver.html"]
 
 ![](/res/jun/17010502.jpg)
 
-
- * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sentome Moss&body=邮件内容)
+### 联系我
+ * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=send to Moss&body=邮件内容)
