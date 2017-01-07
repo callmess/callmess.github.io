@@ -7,8 +7,6 @@ redirect_from: ["/2017/01/07/gitserver.html"]
 
 ---
 
- 电脑已安装好git环境.
-
  * 安装copssh,安装的过程会弹出一个提示让你选择service account 可以自定义也可以不用管.只是个虚拟账号
 ![](/res/0107/copssh.png)
 
@@ -48,5 +46,4 @@ redirect_from: ["/2017/01/07/gitserver.html"]
 
 ![](/res/jun/17010502.jpg)
 
-## 联系我
  * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=发送邮件Moss&body=邮件内容)
