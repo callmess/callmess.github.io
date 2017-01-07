@@ -12,7 +12,7 @@ redirect_from: ["/2017/01/07/gitserver.html"]
  电脑已安装好git环境.
 
  * 安装copssh,安装的过程会弹出一个提示让你选择service account 可以自定义也可以不用管.只是个虚拟账号
-![copssh安装](/res/0107/copssh.png)
+![copssh](/res/0107/copssh.png)
 
  * 添加用于登录的用户,password authenticaction不要勾,因为我们是选择使用公钥来登录
 ![](/res/0107/copssh1.png)
