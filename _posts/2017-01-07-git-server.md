@@ -8,7 +8,7 @@ description: "我们都知道git是一个非常好用的版本管理工具,githu
 redirect_from: ["/2017/01/07/gitserver.html"]
 
 ---
-##### 前提
+### 前提
  电脑已安装好git环境.
 
  * 安装copssh,安装的过程会弹出一个提示让你选择service account 可以自定义也可以不用管.只是个虚拟账号
