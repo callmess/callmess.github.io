@@ -1,11 +1,11 @@
 ---
-title: gitserver for Windows
+title: Windows平台搭建git服务
 layout: post
 
 description: "我们都知道git是一个非常好用的版本管理工具,github则是一个以git为基础的代码托管平台.
 上面托管着非常多的开源项目,github直接推动了开源的发展. 有时候有些资源因为各种原因不想开放出来
 但是又不想付钱,这个时候就只有自己搭建git服务器了,这里介绍在Windows系统平台上搭建git服务器,管理代码资源.实现多个终端的相互协作和管理"
-redirect_from: ["/2017/01/05/myfirst.html"]
+redirect_from: ["/2017/01/05/gitserver.html"]
 
 ---
 ##### 前提
@@ -52,3 +52,4 @@ redirect_from: ["/2017/01/05/myfirst.html"]
 
 ### 联系我
  * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容)
+ <!-- subject后面不能跟中文,否则后果很杯具-->
