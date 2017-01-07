@@ -37,4 +37,4 @@ redirect_from: ["/2017/01/07/gitserver.html"]
 ![](/res/jun/17010502.jpg)
 
 
- * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sentome Moss&body=)
+ * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sentome Moss&body=邮件内容)
