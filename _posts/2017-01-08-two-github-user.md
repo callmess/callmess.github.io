@@ -6,7 +6,7 @@ description: "我们有两个github账号要用,但是我们只有一个Git环�
 redirect_from: ["/2017/01/08/twogithubuser.html"]
 
 ---
-* 两个账号想要相互没有影响的工作,需要配置连个不同的 rsa_id
+* 两个账号想要相互没有影响的工作,需要配置连个不同的 id_rsa
 
 
 ### 联系我
