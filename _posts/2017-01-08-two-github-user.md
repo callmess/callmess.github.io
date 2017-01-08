@@ -12,15 +12,16 @@ redirect_from: ["/2017/01/08/twogithubuser.html"]
  - 添加密钥 : ssh-add ~/.ssh/id_rsa_gmail
  - 创建配置文件 config
  * 添加如下内容:
-  Default github user(ilxj20@163.com)
 
-  Host github.com
+   Default github user(ilxj20@163.com)
 
-  HostName github.com
+   Host github.com
 
-  User git
+   HostName github.com
 
-  IdentityFile /Users/ss/.ssh/id_rsa
+   User git
+
+   IdentityFile /Users/ss/.ssh/id_rsa
 
 * second user(ilxj586@gmail.com)
 
@@ -31,6 +32,20 @@ redirect_from: ["/2017/01/08/twogithubuser.html"]
   User git
 
   IdentityFile /Users/ss/.ssh/id_rsa_gmail
+
+## 使用
+  * clone到本地
+
+  * 原来的写法：
+
+    $ git clone git@github.com:callmess/learngit.git
+  * 现在的写法：
+
+    $ git clone git@github.com: callmess/learngit.git
+
+    $ git clone git@gm.github.com: junely/learngit.git
+
+* 另外记得给这个仓库设置局部的用户名和邮箱 
 
 ### 联系我
  * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容)
