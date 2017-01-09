@@ -19,7 +19,8 @@ I currently work at [Figma](https://www.figma.com/) building the next-generation
 - [Twitter](http://twitter.com/juneday0623) — 如果你也在墙外的话可以关注一些,虽然我不怎么更新
 - [Instagram](http://instagram.com/juneday0623/) — 跟上面一样,如果有我觉得比较好的照片我会更新一下
 - [GitHub](https://github.com/callmess) — code, 基本就是代码啦,目前还比较单薄,正在培育中...
-- [Flickr](http://www.flickr.com/photos/rsms/) — photography
+- [WeChat](spotify/wc.jpg) — 请用手机扫右下角 <img src="spotify/wc.jpg" width="20%" align="right" height="30%">
+ * email  — [ilxj20@163.com](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容) [面试邀请什么的请戳这里](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容)
 
 
 ### [<img src="/res/twitter.png" width="29" height="20" style="display:inline-block;vertical-align:middle"> @juneday](http://twitter.com/juneday0623)
