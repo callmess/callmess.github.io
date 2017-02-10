@@ -2,16 +2,16 @@
 title: CentOS7 最小安装遇到的问题
 layout: post
 
-description: "ContOS最小安装,很多工具命令都是没有的,包括ifconfig命令"
+description: "ContOS最小安装,很多的组件都是没有安装的,包括很多工具,其中就包括ifconfig命令"
 redirect_from: ["/2017/01/08/twogithubuser.html"]
 
 ---
 * #### 问题一: ifconfig: command not found ##
 ![失败信息](/res/0210/1.png)
 
-能百度到的都是相互转载的,并不能解决我的问题  
+能百度到的都是相互转载的,并不能很好的解决我的问题  
 此时是上不了网的  
-还要万能的Google还是可以找到决绝方法的
+还是要万能的Google找到了决绝方法
 
 执行命令 ip addr  查看网卡(一般是eth0,我的是enp7s0f5)是没有获取到IP的
 到/etc/sysconfig/network-scripts 找网卡对应的文件
