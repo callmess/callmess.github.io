@@ -3,7 +3,7 @@ title: HashSet和HashMap的区别
 layout: post
 
 description: "HashSet 实现了 Set 接口，它不允许集合中有重复的值,HashMap 实现了 Map 接口，Map 接口对键值对进行映射。Map 中不允许重复的键。"
-redirect_from: ["/2017/07/27/hashtableandhashmap.html"]
+redirect_from: ["/2017/07/27/hashtsetandhashmap.html"]
 
 ---
 * #### 什么是HashSet ##  
