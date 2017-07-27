@@ -1,18 +1,37 @@
 ---
-title: HashTable和HashMap的区别
+title: HashSet和HashMap的区别
 layout: post
 
 description: "HashSet 实现了 Set 接口，它不允许集合中有重复的值,HashMap 实现了 Map 接口，Map 接口对键值对进行映射。Map 中不允许重复的键。"
 redirect_from: ["/2017/07/27/hashtableandhashmap.html"]
 
 ---
-* #### 什么是HashMap ##  
+* #### 什么是HashSet ##  
 HashSet 实现了 Set 接口，它不允许集合中有重复的值，当我们提到 HashSet 时，第一件事情就是在将对象存储在 HashSet 之前，要先确保对象重写 equals()和 hashCode()方法，这样才能比较对象的值是否相等，以确保set中没有储存相等的对象。如果我们没有重写这两个方法，将会使用这个方法的默认实现。
 public boolean add(Object o)方法用来在 Set 中添加元素，当元素值重复时则会立即返回 false，如果成功添加的话会返回 true。   
 
-  HashMap是基于哈希表的Map接口非同步实现, 此实现提供可选的映射操作,允许null值和null建.
+HashSet是基于HashMap实现的，底层是用HashMap来保存元素的.
+查看其源码可见是在构造函数中直接new了一个HashMap对象并赋给了table,table是HashSet的一个成员属性
+![](/res/0727/method.png)    
+对HashSet的各种方法的操作底层实际操作的都是对HashMap的操作
+![](/res/0727/mapfield.png)  
+![](/res/0727/size.png)  
+![](/res/0727/isempty.png)  
+![](/res/0727/add.png)    
+迭代HashSet其实就是迭代HashMap的Key值
+![](/res/0727/HashTableIterator.png)
+
+
+
+
+* #### 什么是HashMap  
+HashMap 实现了 Map 接口，Map 接口对键值对进行映射。Map中不允许重复的键。Map接口有两个基本的实现，HashMap 和 TreeMap。TreeMap 保存了对象的排列次序，而 HashMap 则不能。HashMap 允许键和值为 null。HashMap 是非 synchronized 的，但 collection 框架提供方法能保证 HashMap synchronized，这样多个线程同时访问 HashMap 时，能保证只有一个线程更改 Map。
+public Object put(Object Key,Object value)方法用来将元素添加到 map 中。  
+
+HashMap是基于哈希表的Map接口非同步实现, 此实现提供可选的映射操作,允许null值和null建.
 不保证映射的顺序,且不保证顺序不会改变.
 HashMap不是同步的,如果多个线程同时访问一个HashMap,如果其中至少有一个现象对该HashMap对象做出了结构上的改变(添加或者删除), 则必须要保持外部(访问该HashMap的方法)同步,防止非同步访问
+
 ##### HashMap的实现原理(数据结构)  
 HashMap的数据实际是存放在一个Node的对象(静态内部类)数据组中, 这个node对象中存放了key和value还有hash值和next下一个node节点
 Node实现了Map接口的一个内部接口Entry
@@ -26,22 +45,6 @@ Node实现了Map接口的一个内部接口Entry
 entrySet的方式效率比较高
 for方法比较简洁且高效,我倾向于这种方法,只需要迭代key就使用第一种方法.
 
-
-
-
-* #### 什么是HashTable  
-HashMap 实现了 Map 接口，Map 接口对键值对进行映射。Map中不允许重复的键。Map接口有两个基本的实现，HashMap 和 TreeMap。TreeMap 保存了对象的排列次序，而 HashMap 则不能。HashMap 允许键和值为 null。HashMap 是非 synchronized 的，但 collection 框架提供方法能保证 HashMap synchronized，这样多个线程同时访问 HashMap 时，能保证只有一个线程更改 Map。
-public Object put(Object Key,Object value)方法用来将元素添加到 map 中。  
-HashSet是基于HashMap实现的，底层是用HashMap来保存元素的.
-查看其源码可见是在构造函数中直接new了一个HashMap对象并赋给了table,table是HashSet的一个成员属性
-![](/res/0727/method.png)    
-对HashSet的各种方法的操作底层实际操作的都是对HashMap的操作
-![](/res/0727/mapfield.png)  
-![](/res/0727/size.png)  
-![](/res/0727/isempty.png)  
-![](/res/0727/add.png)    
-迭代HashSet其实就是迭代HashMap的Key值
-![](/res/0727/HashTableIterator.png)
 
 
 

@@ -4,10 +4,10 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title></title>
-  <link href="http://rsms.me/atom.xml" rel="self"/>
-  <link href="http://rsms.me/"/>
+  <link href="http://juneday.cc/atom.xml" rel="self"/>
+  <link href="http://juneday.cc/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://rsms.me/</id>
+  <id>http://juneday.cc/</id>
   <author>
     <name>Rasmus Andersson</name>
     <email>rasmus@notion.se</email>
@@ -17,11 +17,11 @@ layout: null
     <title>{{ post.title }}</title>
     <link href="http://rsms.me{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>http://rsms.me{{ post.id }}</id>
+    <id>http://juneday.cc{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
     <author>
       <name>Rasmus Andersson</name>
-      <uri>http://rsms.me/about/</uri>
+      <uri>http://junday.cc/about/</uri>
     </author>
   </entry>
   {% endfor %}
