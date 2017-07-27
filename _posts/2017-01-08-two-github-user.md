@@ -45,8 +45,8 @@ redirect_from: ["/2017/01/08/twogithubuser.html"]
 
     $ git clone git@gm.github.com: junely/learngit.git
 
-* 另外记得给这个仓库设置局部的用户名和邮箱 
+* 另外记得给这个仓库设置局部的用户名和邮箱
 
 ### 联系我
- * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容)
+ * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=send to ss&body=邮件内容)
  <!-- subject后面不能跟中文,否则后果很杯具-->

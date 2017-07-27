@@ -48,5 +48,5 @@ yum -y install net-tools 安装后ifconfig命令即可正常使用
 
 
 ### 联系我
- * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容)
+ * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=send to ss&body=邮件内容)
  <!-- subject后面不能跟中文,否则后果很杯具-->

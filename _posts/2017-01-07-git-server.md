@@ -51,5 +51,5 @@ redirect_from: ["/2017/01/05/gitserver.html"]
 ![](/res/jun/17010502.jpg)
 
 ### 联系我
- * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=sen to Moss&body=邮件内容)
+ * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=send to ss&body=邮件内容)
  <!-- subject后面不能跟中文,否则后果很杯具-->
