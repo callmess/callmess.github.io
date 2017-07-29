@@ -1,3 +1,9 @@
+---
+layout: post
+title: LinkedList
+description: "LinkedList 和 ArrayList 一样，都实现了 List 接口，但其内部的数据结构有本质的不同。LinkedList 是基于链表实现的（通过名字也能区分开来），所以它的插入和删除操作比 ArrayList 更加高效。但也是由于其为基于链表的，所以随机访问的效率要比 ArrayList 差。"
+redirect_from:
+---
 LinkedList 和 ArrayList 一样，都实现了 List 接口，但其内部的数据结构有本质的不同。LinkedList 是基于链表实现的（通过名字也能区分开来），所以它的插入和删除操作比 ArrayList 更加高效。但也是由于其为基于链表的，所以随机访问的效率要比 ArrayList 差。
 
 #### LinkedList类定义  
@@ -25,11 +31,11 @@ public class LinkedList<E>  extends AbstractSequentialList<E>
 
 }
 ```
-> LinkedList 继承自 AbstractSequenceList，实现了 List、Deque、Cloneable、java.io.Serializable 接口。AbstractSequenceList 提供了List接口骨干性的实现以减少实现 List 接口的复杂度，Deque 接口定义了双端队列的操作。
->
-> 在 LinkedList 中除了本身自己的方法外，还提供了一些可以使其作为栈、队列或者双端队列的方法。这些方法可能彼此之间只是名字不同，以使得这些名字在特定的环境中显得更加合适。
->
-> LinkedList 也是 fail-fast 的（前边提过很多次了）。
+LinkedList 继承自 AbstractSequenceList，实现了 List、Deque、Cloneable、java.io.Serializable 接口。AbstractSequenceList 提供了List接口骨干性的实现以减少实现 List 接口的复杂度，Deque 接口定义了双端队列的操作。
+
+在 LinkedList 中除了本身自己的方法外，还提供了一些可以使其作为栈、队列或者双端队列的方法。这些方法可能彼此之间只是名字不同，以使得这些名字在特定的环境中显得更加合适。
+
+LinkedList 也是 fail-fast 的（前边提过很多次了）。
 
 #### 重要方法源码
 
@@ -47,9 +53,10 @@ private static class Node<E> {
     }
 }
 ```
-> 可见一个节点Node中除了存放当前节点数据element,外还存放了前一个节点prev和后一个节点next的引用
+可见一个节点Node中除了存放当前节点数据element,外还存放了前一个节点prev和后一个节点next的引用
 
-* add()
+* add()  
+
 ```java
 public boolean add(E e) {
     linkLast(e);
@@ -59,6 +66,7 @@ public boolean add(E e) {
 /**
  * Links e as last element.
  */
+
 void linkLast(E e) {
  final Node<E> l = last;
  final Node<E> newNode = new Node<>(l, e, null);
@@ -111,7 +119,7 @@ void linkBefore(E e, Node<E> succ) {
     modCount++;
 }
 ```
->  add(E e)是继承与AbstractList的方法,没指定插入位置,默认是调用linkLast(E e)  插入到末尾位置.可见是新建了一个node,让后在存数据的同时prev属性指向了前一个node.   
+ add(E e)是继承与AbstractList的方法,没指定插入位置,默认是调用linkLast(E e)  插入到末尾位置.可见是新建了一个node,让后在存数据的同时prev属性指向了前一个node.   
 add(int index, E element)  
 插入到指定位置,插入数据和前后node引用之外,还更新前面node的next node,后一node的prev node
 
@@ -141,5 +149,4 @@ Node<E> node(int index) {
     }
 }
 ```
-
-> 可见,若要访问某个位置的节点的数据,将会从头(或者尾)进行查到,相当于遍历到该数据的位置. if (index < (size >> 1)) 表明如果位置小于链表的一半则从头开始遍历,否则从后面开始倒序遍历
+可见,若要访问某个位置的节点的数据,将会从头(或者尾)进行查到,相当于遍历到该数据的位置. if (index < (size >> 1)) 表明如果位置小于链表的一半则从头开始遍历,否则从后面开始倒序遍历
