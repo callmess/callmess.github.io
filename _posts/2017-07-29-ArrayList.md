@@ -59,7 +59,7 @@ public class ArrayList<E> extends AbstractList<E>
         }
     }
 
-    ```
+```
 由构造函数可见ArrayList底层是用数组来存储数据
 
 
