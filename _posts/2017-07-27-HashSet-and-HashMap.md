@@ -65,7 +65,7 @@ HashMap中key是不允许重复的（后面的会覆盖原有的键值）, HashS
 参考
 [http://www.runoob.com/java/java-collections.html](http://www.runoob.com/java/java-collections.html)  
 [http://wiki.jikexueyuan.com/project/java-collection/hashset-and-hashmap.html](http://wiki.jikexueyuan.com/project/java-collection/hashset-and-hashmap.html)
-
+[https://my.oschina.net/hosee/blog/618953](https://my.oschina.net/hosee/blog/618953)
 
 ### 联系我
  * email : [ilxj20@163.com](mailto:ilxj20@163.com?subject=send to ss&body=邮件内容)

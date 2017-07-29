@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LinkedList
+title: LinkedList简单介绍以及和ArrayList的区别
 description: "LinkedList 和 ArrayList 一样，都实现了 List 接口，但其内部的数据结构有本质的不同。LinkedList 是基于链表实现的（通过名字也能区分开来），所以它的插入和删除操作比 ArrayList 更加高效。但也是由于其为基于链表的，所以随机访问的效率要比 ArrayList 差。"
 redirect_from:
 ---
@@ -150,3 +150,8 @@ Node<E> node(int index) {
 }
 ```
 可见,若要访问某个位置的节点的数据,将会从头(或者尾)进行查到,相当于遍历到该数据的位置. if (index < (size >> 1)) 表明如果位置小于链表的一半则从头开始遍历,否则从后面开始倒序遍历
+
+* ArrayList和LinkedList的大致区别如下:    
+1.ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。  
+2.对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。  
+3.对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。
