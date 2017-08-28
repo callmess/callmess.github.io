@@ -56,6 +56,70 @@
 <div class="posts">
   <div class="content full-bleed" id="recent-posts">
   <a
+    href="/LinkedList" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">LinkedList简单介绍以及和ArrayList的区别</div>
+      
+        <!-- <div class="title">LinkedList简单介绍以及和ArrayList的区别</div> -->
+        <info datetime="">
+          Jul 2017
+        </info>
+        
+        <span class="body"><p>LinkedList 和 ArrayList 一样，都实现了 List 接口，但其内部的数据结构有本质的不同。LinkedList 是基于链表实现的（通过名字也能区分开来），所以它的插入和删除操作比 ArrayList 更加高效。但也是由于其为基于链表的，所以随机访问的效率要比 ArrayList 差。</p>
+</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/LinkHashMap" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">LinkedHashMap</div>
+      
+        <!-- <div class="title">LinkedHashMap</div> -->
+        <info datetime="">
+          Jul 2017
+        </info>
+        
+        <span class="body">
+  LinkedHashMap 概述
+HashMap 是无序的，HashMap 在 put 的时候是根据 key 的 hashcode 进行 hash 然后放入对应的地方。所以在按照一定顺序 put 进 HashMap 中，然后遍历出 HashMap 的顺序跟 put 的顺序不同（除非在 put 的时候 key 已经按照 hashcode 排序号了，这种几率非常小）
+
+
+</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/ConcurrentHashMap" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">ConcurrentHashMap</div>
+      
+        <!-- <div class="title">ConcurrentHashMap</div> -->
+        <info datetime="">
+          Jul 2017
+        </info>
+        
+        <span class="body"><p>HashMap 是非线程安全的，当我们只有一个线程在使用 HashMap 的时候，自然不会有问题，但如果涉及到多个线程，并且有读有写的过程中，HashMap 就不能满足我们的需要了(fail-fast)。在不考虑性能问题的时候，我们的解决方案有 Hashtable 或者Collections.synchronizedMap(hashMap)，这两种方式基本都是对整个 hash 表结构做锁定操作的，这样在锁表的期间，别的线程就需要等待了，无疑性能不高。</p>
+</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/ArrayList" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">ArrayList</div>
+      
+        <!-- <div class="title">ArrayList</div> -->
+        <info datetime="">
+          Jul 2017
+        </info>
+        
+        <span class="body"><p>ArrayList 可以理解为动态数组，用 MSDN 中的说法，就是 Array 的复杂版本。与 Java 中的数组相比，它的容量能动态增长。ArrayList 是 List 接口的可变数组的实现。实现了所有可选列表操作，并允许包括 null 在内的所有元素。除了实现 List 接口外，此类还提供一些方法来操作内部用来存储列表的数组的大小。</p>
+</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
     href="/HashSet-and-HashMap" class="post-excerpt">
       <div class="padded-content">
         <div class="title">HashSet和HashMap的区别</div>
