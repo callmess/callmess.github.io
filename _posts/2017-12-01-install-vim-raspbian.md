@@ -9,8 +9,7 @@ redirect_from: ["/2017/12/01/installvimraspbian.html"]
 ###### 系统 : raspbian
 ###### 安装方法 : sudo apt-get install -y vim
 **报错信息**:
-```
-Err:1 http://mirrordirector.raspbian.org/raspbian stretch/main armhf vim-runtime all 2:8.0.0197-4
+```Err:1 http://mirrordirector.raspbian.org/raspbian stretch/main armhf vim-runtime all 2:8.0.0197-4
   404  Not Found [IP: 93.93.128.193 80]
 Err:2 http://mirrordirector.raspbian.org/raspbian stretch/main armhf vim armhf 2:8.0.0197-4
   404  Not Found [IP: 93.93.128.193 80]
@@ -27,8 +26,8 @@ E: Unable to fetch some archives, maybe run apt-get update or try with --fix-mis
 - 执行 sudo apt-get install -y vim
 还是报错!  
 **错误信息**:
-```
-Some packages could not be installed. This may mean that you have
+
+```Some packages could not be installed. This may mean that you have
 requested an impossible situation or if you are using the unstable
 distribution that some required packages have not yet been created
 or been moved out of Incoming.
@@ -45,10 +44,10 @@ E: Unable to correct problems, you have held broken packages.
 **办法**: 删除掉原来的包 sudo apt-get remove vim-common
 
 - 再执行安装命令 :sudo apt-get install -y vim
+
 **成功安装** :
 
-```
-Reading package lists... Done
+`` Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following packages will be REMOVED:
@@ -114,5 +113,4 @@ update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) 
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
 update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
-
 ```
