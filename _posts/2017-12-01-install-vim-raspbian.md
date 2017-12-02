@@ -27,7 +27,8 @@ E: Unable to fetch some archives, maybe run apt-get update or try with --fix-mis
 还是报错!  
 **错误信息**:
 
-```Some packages could not be installed. This may mean that you have
+``` python 
+Some packages could not be installed. This may mean that you have
 requested an impossible situation or if you are using the unstable
 distribution that some required packages have not yet been created
 or been moved out of Incoming.
@@ -36,8 +37,8 @@ The following information may help to resolve the situation:
 The following packages have unmet dependencies:
  vim : Depends: vim-common (= 2:7.4.488-7+deb8u3) but 2:8.0.0197-4 is to be installed
 E: Unable to correct problems, you have held broken packages.
-
 ```
+
 
 - 百度说要update 软件源和系统,分析应该是不同的软件源的软件版本不容的原因,已经安装了高版本的包但是当前软件源的版本比这个版本低
 
@@ -47,11 +48,12 @@ E: Unable to correct problems, you have held broken packages.
 
 **成功安装** :
 
-`` Reading package lists... Done
+``` python
+Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following packages will be REMOVED:
-  vim-common vim-tiny
+ vim-common vim-tiny
 0 upgraded, 0 newly installed, 2 to remove and 60 not upgraded.
 After this operation, 1,132 kB disk space will be freed.
 Do you want to continue? [Y/n] Y
@@ -68,13 +70,13 @@ Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following additional packages will be installed:
-  vim-common vim-runtime
+ vim-common vim-runtime
 Suggested packages:
-  ctags vim-doc vim-scripts
+ ctags vim-doc vim-scripts
 The following packages will be REMOVED:
-  xxd
+ xxd
 The following NEW packages will be installed:
-  vim vim-common vim-runtime
+ vim vim-common vim-runtime
 0 upgraded, 3 newly installed, 1 to remove and 60 not upgraded.
 Need to get 6,042 kB of archives.
 After this operation, 28.2 MB of additional disk space will be used.
