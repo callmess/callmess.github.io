@@ -9,7 +9,8 @@ redirect_from: ["/2017/12/01/installvimraspbian.html"]
 ###### 系统 : raspbian
 ###### 安装方法 : sudo apt-get install -y vim
 **报错信息**:
-```Err:1 http://mirrordirector.raspbian.org/raspbian stretch/main armhf vim-runtime all 2:8.0.0197-4
+```
+Err:1 http://mirrordirector.raspbian.org/raspbian stretch/main armhf vim-runtime all 2:8.0.0197-4
   404  Not Found [IP: 93.93.128.193 80]
 Err:2 http://mirrordirector.raspbian.org/raspbian stretch/main armhf vim armhf 2:8.0.0197-4
   404  Not Found [IP: 93.93.128.193 80]
